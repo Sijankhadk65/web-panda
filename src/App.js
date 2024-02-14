@@ -55,10 +55,10 @@ function App() {
   return (
     <div className="flex flex-col gap-4 items-center">
       <div>
-        <img src={selectedGif} width={400} alt="GIF" />
+        <img src={selectedGif} width={200} alt="GIF" />
       </div>
       <div>
-        {canSayNo ? (<div className="flex flex-col gap-4 items-center"><div className='text-7xl font-bold text-center'>
+        {canSayNo ? (<div className="flex flex-col gap-4 items-center"><div className='text-4xl font-bold text-center'>
           Will you be my valentine?
         </div>
           <div className='flex flex-row gap-3'>
@@ -70,7 +70,7 @@ function App() {
                 onClick={handleYesButtonClick}>Yes</button>
             </div>
             <div className='cols-span-1'><button class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded" onClick={handleNoButtonClick}>{messages[messageCounter]}</button></div>
-          </div></div>) : (<div><div className='text-7xl font-bold text-center'>
+          </div></div>) : (<div><div className='text-4xl font-bold text-center'>
             Ok, Yaaaa!!!
           </div></div>)}
       </div>
